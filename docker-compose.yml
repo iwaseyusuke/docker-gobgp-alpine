@@ -1,0 +1,9 @@
+version: '2'
+services:
+  gobgp-alpine:
+    build:
+      context: .
+      args:
+        user: iwaseyusuke
+    image: iwaseyusuke/gobgp-alpine
+    tty: true
