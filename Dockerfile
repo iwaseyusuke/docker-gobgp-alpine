@@ -20,3 +20,5 @@ RUN apk add --no-cache --virtual=build-dependencies \
  && go get github.com/osrg/gobgp/gobgpd \
  && rm -rf ${GOPATH}/pkg/* ${GOPATH}/src/* \
  && apk del --purge build-dependencies
+
+ENTRYPOINT ["/bin/ash"]
